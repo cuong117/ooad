@@ -1,9 +1,43 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
     <style name="Base.Theme.Thanso" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:fitsSystemWindows">true</item>
     </style>
 
     <style name="Theme.Thanso" parent="Base.Theme.Thanso" />
+
+    <style name="Theme.launch" parent="Theme.Thanso">
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="myTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:textColorHint">
+            @color/colorTextLight
+        </item>
+    </style>
+
+    <style name="CalendarDialog" parent="Theme.MaterialComponents.DayNight.Dialog">
+        <item name="colorPrimary">@color/blue242</item>
+        <item name="colorSecondary">@color/blue242</item>
+        <item name="android:windowBackground">
+            @drawable/bg_white_16
+        </item>
+        <item name="android:buttonBarNegativeButtonStyle">
+            @style/ButtonBarStyle
+        </item>
+        <item name="android:buttonBarPositiveButtonStyle">
+            @style/ButtonBarStyle
+        </item>
+    </style>
+    <style name="ButtonBarStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/blue242
+        </item>
+<!--        <item name="android:background">-->
+<!--            @drawable/bg_selectable-->
+<!--        </item>-->
+        <item name="backgroundTint">@color/button_selector</item>
+<!--        <item name="android:foreground">?attr/selectableItemBackground</item>-->
+    </style>
 </resources>

@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">thanso</string>
+    <string name="report">Báo cáo</string>
+    <string name="create">Tạo</string>
+    <string name="first_name">Họ</string>
+    <string name="last_name">Tên</string>
+    <string name="birthday">Ngày sinh</string>
+    <string name="create_report">Tạo báo cáo</string>
+    <string name="not_empty_field">Trường này không được để trống</string>
+    <string name="only_text_feild">Trường này chỉ được nhập chữ</string>
+    <string name="date_format_ddmmyyyy">%s/%s/%s</string>
 </resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/createLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dp16"
+    android:paddingTop="@dimen/dp16">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_report"
+        android:textSize="@dimen/sp16"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/dp16"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/myTextInputLayout"
+        android:id="@+id/firstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp16"
+        app:boxStrokeColor="@color/text_input_border"
+        app:hintTextColor="@color/blue242"
+        app:errorTextColor="@color/colorTextError"
+        app:boxStrokeErrorColor="@color/colorTextError"
+        app:boxBackgroundColor="@color/background"
+        app:layout_constraintTop_toBottomOf="@id/title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/first_name"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:textColor="@color/white"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/myTextInputLayout"
+        android:id="@+id/lastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp16"
+        app:boxStrokeColor="@color/text_input_border"
+        app:hintTextColor="@color/blue242"
+        app:errorTextColor="@color/colorTextError"
+        app:boxStrokeErrorColor="@color/colorTextError"
+        app:boxBackgroundColor="@color/background"
+        app:layout_constraintTop_toBottomOf="@id/firstName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/last_name"
+            android:inputType="textPersonName"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/myTextInputLayout"
+        android:id="@+id/birthDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp16"
+        app:endIconDrawable="@drawable/ic_calendar"
+        app:endIconMode="custom"
+        app:endIconTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/lastName"
+        app:boxStrokeColor="@color/text_input_border"
+        app:hintTextColor="@color/blue242"
+        app:errorTextColor="@color/colorTextError"
+        app:boxStrokeErrorColor="@color/colorTextError"
+        app:boxBackgroundColor="@color/background">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/birthday"
+            android:inputType="none"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/createBut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp16"
+        android:background="@drawable/bg_circle_8"
+        android:backgroundTintMode="src_in"
+        android:text="@string/create"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="48dp"
+        app:backgroundTint="@color/blue242"
+        android:foreground="?attr/selectableItemBackground"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
